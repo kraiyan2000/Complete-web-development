@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transitions</title>
+</head>
+ <style>
+
+#box{
+display: flex;
+justify-content: center;
+align-items: center;
+width: 200px;
+height: 200px;
+background-color: brown;
+
+}
+
+ /* #box:hover{
+        background-color: green;
+        transition-property: background-color;
+        transition-duration: 1s;
+        transition-timing-function: ease-in-out;
+        transition-delay: 2s;
+        transition: background-color 1s ease-in-out 2s;
+        transition: all 1s ease-in-out 2s; 
+}  */
+
+/* From normal box to when we hover on the element we give order to get chnage the element type as mentioned in the hover */
+
+
+
+#box:hover{
+        background-color: green;
+        height: 400px;
+        width: 400px;
+        border-radius: 100px;
+        font-size: 45px;
+        transition-duration: 1s;
+    }
+
+ </style>
+
+
+<body>
+    
+<h3>This is transition tutorials</h3>
+<div class="container" id="box">This is box</div>
+
+</body>
+</html>

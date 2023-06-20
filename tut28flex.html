@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex box tutorial</title>
+</head>
+
+<style>
+.container{ 
+    height: 544px;
+    width: 100%;
+    border: solid black;
+    display: flex;
+    flex-wrap: wrap;
+    
+    
+    
+}
+
+.item{
+    width: 200px;
+    height: 200px;
+    background-color: tomato;
+    border: 2px solid rgb(0, 255, 72);
+    margin: 10px;
+    padding: 3px;
+    
+}
+
+
+#item-1{
+    flex-grow: 2;
+}
+
+#item-2{
+    flex-grow: 1;
+    flex-basis: 233px;
+    
+}
+
+#item-3{
+    flex-grow: 2;
+}
+
+</style>
+
+
+<body>
+    <h1>This is flex box</h1>
+
+    <div class="container">
+        <div class="item" id="item-1">First box</div>
+        <div class="item" id="item-2">Second box</div>
+        <div class="item" id="item-3">Third box</div>
+        
+    </div>
+
+</body>
+</html>
